@@ -1,0 +1,19 @@
+[
+ {
+  "slug": "review-ai-agent-files-on-iphone",
+  "date": "2026-11-16",
+  "run": "/Users/johnkeng/Works/自製 Apple APP/官網SEO/部落格/guomu/runs/2026-11-16-review-ai-agent-files-on-iphone",
+  "langs": {
+   "zh-Hant": {
+    "title": "在手機上請 Claude、Gemini 做的檔案，怎麼檢查、再請它改？",
+    "desc": "在 iPhone 上請 AI Agent 做報表、文件，常常看不清楚、改的話又講不清楚。整理一套 5 步驟的檢查做法：輸出成檔案、全螢幕看、邊看邊記、一次交回、對照第 2 版。",
+    "hero_alt": "手繪插畫：一隻水獺仰躺著，在肚子上的簽收單蓋章"
+   },
+   "en": {
+    "title": "Review Claude and Gemini Files on iPhone, Then Ask for Fixes",
+    "desc": "Review AI agent files on iPhone in 5 steps: export a file, read it full screen, note fixes as you go, send them back at once, then check version 2.",
+    "hero_alt": "Hand-drawn illustration: an otter lying on its back, stamping a receipt on its belly"
+   }
+  }
+ }
+]
