@@ -7,4 +7,4 @@ Served by GitHub Pages at https://sona-orbit.github.io/guomu/
 
 - Home, privacy and support pages in English, 繁體中文, 日本語, 한국어 and ไทย
 - Static HTML and CSS, no build step on this repository
-- Contact: sona.orbit.hi@gmail.com
+- Published by Sona Orbit. Issues and pull requests are turned off.
