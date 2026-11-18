@@ -1,0 +1,129 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="text-scale" content="scale">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)"><meta name="apple-itunes-app" content="app-id=6835101059">
+<script type="speculationrules">{"prerender": [{"where": {"and": [{"href_matches": "/guomu/*"}, {"not": {"selector_matches": "[download],[target=_blank],.no-prerender"}}]}, "eagerness": "moderate"}]}</script>
+<title>KI-erstellte HTML-Mini-Apps auf dem iPhone offline nutzen | Guomu</title><meta name="description" content="Claude oder Gemini bauen dir HTML-Timer, Ausgabenrechner oder Checklisten. Öffne sie in Guomu, behalte deine Daten und schicke Korrekturen an die KI zurück.">
+<link rel="canonical" href="https://sona-orbit.github.io/guomu/de/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="zh-Hans" href="https://sona-orbit.github.io/guomu/zh-Hans/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="es" href="https://sona-orbit.github.io/guomu/es/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="de" href="https://sona-orbit.github.io/guomu/de/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="fr" href="https://sona-orbit.github.io/guomu/fr/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="pt-BR" href="https://sona-orbit.github.io/guomu/pt-BR/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="x-default" href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/">
+<meta property="og:type" content="article"><meta property="og:title" content="KI-erstellte HTML-Mini-Apps auf dem iPhone offline nutzen"><meta property="og:description" content="Claude oder Gemini bauen dir HTML-Timer, Ausgabenrechner oder Checklisten. Öffne sie in Guomu, behalte deine Daten und schicke Korrekturen an die KI zurück."><meta property="og:url" content="https://sona-orbit.github.io/guomu/de/blog/run-ai-html-mini-apps-on-iphone/"><meta property="og:image" content="https://sona-orbit.github.io/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.jpg">
+<link rel="icon" href="/guomu/assets/favicon-32.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "KI-erstellte HTML-Mini-Apps auf dem iPhone offline nutzen", "description": "Claude oder Gemini bauen dir HTML-Timer, Ausgabenrechner oder Checklisten. Öffne sie in Guomu, behalte deine Daten und schicke Korrekturen an die KI zurück.", "inLanguage": "de", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "mainEntityOfPage": "https://sona-orbit.github.io/guomu/de/blog/run-ai-html-mini-apps-on-iphone/", "image": "https://sona-orbit.github.io/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.jpg", "author": {"@type": "Person", "name": "Sona Orbit", "jobTitle": "Independent developer"}, "publisher": {"@type": "Organization", "name": "Sona Orbit"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "de", "mainEntity": [{"@type": "Question", "name": "Warum funktionieren die Buttons nicht, wenn ich eine HTML-Datei öffne?", "acceptedAnswer": {"@type": "Answer", "text": "Guomu öffnet HTML standardmäßig im Modus „Safe preview“, der keinen Code auf der Seite ausführt. Blende die vollständige Oberfläche ein, tippe oben auf „Run mode“ und wähle „Offline mini app“. Die Seite lädt neu und du kannst die Buttons benutzen."}}, {"@type": "Question", "name": "Gehen die von einer Mini-App gespeicherten Daten verloren?", "acceptedAnswer": {"@type": "Answer", "text": "In localStorage gespeicherte Daten bleiben bei dieser Lieferung und sind beim nächsten Öffnen wieder da. Um sie zu löschen, tippe auf „⋯“ und wähle „Clear this file's mini app data“."}}, {"@type": "Question", "name": "Warum läuft ein KI-Werkzeug mit externer Bibliothek nicht in Guomu?", "acceptedAnswer": {"@type": "Answer", "text": "Aus dem Internet nachgeladener Code wird nicht ausgeführt. Bitte die KI, eine einzige HTML-Datei zu erstellen, die den gesamten benötigten Code direkt enthält, ohne CDN."}}, {"@type": "Question", "name": "Kann eine Mini-App Daten aus dem Internet abrufen?", "acceptedAnswer": {"@type": "Answer", "text": "Du kannst zu „HTTPS mini app“ wechseln. Guomu bittet dich zuvor um Bestätigung. Da Code auf der Seite Inhalte oder deine Eingaben an einen fremden Server senden kann, solltest du diesen Modus nur nutzen, wenn du der Quelle der Datei vertraust."}}]}</script><style>
+:root{--bg:#FFFFFF;--soft:#F2F2F2;--ink:#26232b;--muted:#6b6672;--line:rgba(0,0,0,.09);--accent:#111111}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--soft:#202020;--ink:#ece9f0;--muted:#a7a2ae;--line:rgba(255,255,255,.12);--accent:#ECECEC}body .button{color:#16141a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","PingFang SC","Noto Sans TC","Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+.top{max-width:760px;margin:0 auto;padding:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.top .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:none}.top .brand img{width:30px;height:30px;border-radius:8px}
+.top nav{margin-left:auto;display:flex;gap:16px;font-size:0.9375rem}.top nav a{text-decoration:none;color:var(--muted)}.top nav a.on{color:var(--accent);font-weight:600}
+main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
+.eyebrow{color:var(--accent);font-size:0.8125rem;font-weight:600;letter-spacing:.04em;margin:8px 0 0}
+h1{font-size:clamp(1.625rem,1.2rem + 2vw,2.25rem);line-height:1.3;margin:6px 0 12px}h2{font-size:1.4375rem;line-height:1.4;margin:40px 0 12px}h3{font-size:1.1875rem;margin:26px 0 8px}
+.intro{font-size:1.125rem;color:var(--muted)}.meta{color:var(--muted);font-size:0.875rem}
+.langs{font-size:0.875rem;display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 18px}.langs a{text-decoration:none}.langs b{color:var(--ink)}
+figure{margin:22px 0}figure img{display:block;border-radius:18px;width:100%}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;padding-left:22px}
+.blog-note{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;font-size:0.9375rem;color:var(--muted)}
+.blog-src{font-size:0.875rem;color:var(--muted);margin-top:-4px}
+.blog-table.compact{display:table;table-layout:fixed;font-size:0.875rem}.blog-table.compact th,.blog-table.compact td{min-width:0;padding:6px 4px;text-align:center;white-space:nowrap}
+.blog-table{width:100%;border-collapse:collapse;font-size:0.9375rem;display:block;overflow-x:auto}.blog-table th,.blog-table td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;min-width:110px}
+.blog-table th{background:var(--soft)}
+.blog-faq h3{font-size:1.0625rem}blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--line);color:var(--muted)}
+.cta{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:22px;margin:40px 0 20px;text-align:center}.cta h2{margin:0 0 4px}
+.cta-mid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:28px 0}.cta-mid p{margin:0;font-weight:600}.cta-mid .button{margin-top:0;padding:9px 18px;font-size:0.9375rem}
+.related{margin:36px 0 0}.related h2{margin:0 0 10px;font-size:1.1875rem}.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.related a{text-decoration:none;font-weight:600}.related span{display:block;color:var(--muted);font-size:0.875rem;font-weight:400}
+.button{display:inline-block;margin-top:10px;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.cards{display:grid;gap:18px;margin-top:20px}.card{display:grid;grid-template-columns:200px 1fr;gap:16px;background:var(--soft);border:1px solid var(--line);border-radius:18px;overflow:hidden;color:var(--ink);text-decoration:none}
+.card img{width:100%;height:100%;object-fit:cover}.card div{padding:14px 16px 16px 0}.card h2{font-size:1.1875rem;margin:4px 0 6px}.card p{margin:0 0 8px;color:var(--muted);font-size:0.9375rem}.card strong{color:var(--accent);font-size:0.9375rem}
+@media (max-width:37.5em){.card{grid-template-columns:1fr}.card div{padding:0 16px 16px}}
+footer{max-width:760px;margin:0 auto;padding:20px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:0.875rem;display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--muted)}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+@media (prefers-reduced-motion:no-preference){@view-transition{navigation:auto}}
+</style></head><body>
+<header class="top"><a class="brand" href="/guomu/de/"><img src="/guomu/assets/icon-192.webp" alt="" width="30" height="30">Guomu</a>
+<nav><a href="/guomu/de/">Start</a><a class="on" href="/guomu/de/blog/">Artikel</a></nav></header>
+<main><p class="eyebrow">Guomu · Artikel</p><h1>KI-erstellte HTML-Mini-Apps auf dem iPhone offline nutzen</h1><p class="intro">Wenn du eine KI nach einem kleinen Werkzeug fragst – etwa einem Timer, einem Ausgabenrechner oder einer Checkliste –, bekommst du nach wenigen Sätzen eine HTML-Datei. Der letzte Schritt ist oft der schwierigste: die Datei auf dem iPhone öffnen, die Buttons zum Laufen bringen und deine Eingaben fürs nächste Mal speichern. Bitte die KI, alles in eine einzige HTML-Datei zu packen, teile sie mit Guomu und wechsle zu „Offline mini app“, um sie auszuführen. Sie läuft offline und ihre Daten bleiben bei dieser Lieferung.</p><p class="meta"><time datetime="2026-11-18">2026-11-18</time> · Etwa 6 Min. Lesezeit</p><p class="langs"><a href="https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/">繁體中文</a><a href="https://sona-orbit.github.io/guomu/zh-Hans/blog/run-ai-html-mini-apps-on-iphone/">简体中文</a><a href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/">English</a><a href="https://sona-orbit.github.io/guomu/es/blog/run-ai-html-mini-apps-on-iphone/">Español</a><b>Deutsch</b><a href="https://sona-orbit.github.io/guomu/fr/blog/run-ai-html-mini-apps-on-iphone/">Français</a><a href="https://sona-orbit.github.io/guomu/pt-BR/blog/run-ai-html-mini-apps-on-iphone/">Português</a></p><figure><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.webp" alt="Handgezeichnete Illustration eines Otters, der ein Smartphone mit einem kleinen Timer und großen Buttons auf dem Bildschirm hält" width="600" height="400" fetchpriority="high"></figure><nav class="toc"><strong>Inhalt</strong><ol><li><a href="#part-1">Der schwierige Teil: ein KI-Werkzeug öffnen</a></li><li><a href="#part-2">Werkzeuge, die du dir von einer KI bauen lassen kannst</a></li><li><a href="#part-3">So schreibst du einen Prompt, der funktioniert</a></li><li><a href="#part-4">In Guomu mit „Offline mini app“ öffnen</a></li><li><a href="#part-5">Daten behalten oder löschen</a></li><li><a href="#part-6">Was diese Werkzeuge nicht können</a></li><li><a href="#part-7">Notizen hinterlassen und die KI um Korrekturen bitten</a></li><li><a href="#part-8">Häufig gestellte Fragen</a></li></ol></nav><article><p class="blog-note">Ich bin Sona Orbit, Solo-Entwickler von Guomu (過目). So nutze ich von einer KI erstellte Werkzeuge auf meinem iPhone. Details zu den Funktionen von Guomu findest du auf dieser Website und in App-Version 1.0 (November 2026).</p>
+
+<section id="part-1"><h2>1. Der schwierige Teil: ein KI-Werkzeug öffnen</h2>
+<p>HTML ist nicht nur für Webseiten da. Es kann auch ein kleines Programm mit Buttons sein, das rechnet und sich deine Eingaben merkt. Claude, Gemini und ähnliche KI-Apps erstellen so etwas meist schon auf eine kurze Anfrage hin.</p>
+<p>Knifflig wird es erst, wenn du es auf dem Smartphone nutzen willst. Oft ist es nur ein langer Codeblock im Chat. Selbst wenn du ihn als Datei speicherst, brauchst du einen Ort, um sie zu öffnen und auszuführen. Damit das Werkzeug im Alltag hilft, müssen die Buttons funktionieren und deine Zahlen erhalten bleiben.</p>
+</section>
+
+<section id="part-2"><h2>2. Werkzeuge, die du dir von einer KI bauen lassen kannst</h2>
+<p>Gut geeignet sind kleine Helfer, die auf einen Bildschirm passen, ein paar Buttons haben und Daten nur für dich speichern. Zum Beispiel:</p>
+<ul>
+<li>Ein Pomodoro-Timer, Teetimer oder Intervalltimer</li>
+<li>Ein einfacher Ausgabenrechner: Betrag und Kategorie eingeben und die Summe sehen</li>
+<li>Eine tägliche Checkliste zum Wassertrinken, für Medikamente oder zum Vokabellernen</li>
+<li>Karteikarten zum Umdrehen, bei denen nicht gewusste Karten erneut abgefragt werden</li>
+<li>Ein Rechnungsaufteiler oder Währungsrechner (du gibst den Wechselkurs selbst ein)</li>
+<li>Ein Zufallsgenerator, Würfel oder Schichtplaner</li>
+</ul>
+<figure class="blog-illus"><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/tools.webp" alt="Handgezeichnete Illustration kleiner Werkzeuge auf einem Tisch: ein Timer, ein Taschenrechner, eine Checkliste und ein Stapel Karteikarten" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-3"><h2>3. So schreibst du einen Prompt, der funktioniert</h2>
+<p>Beschreibe das gewünschte Werkzeug und füge diese Anweisungen hinzu, damit die Datei auf deinem iPhone läuft:</p>
+<ul>
+<li><strong>„Erstelle eine einzige HTML-Datei, in der auch das gesamte CSS und JavaScript enthalten sind.“</strong> Eine einzelne Datei lässt sich leichter teilen und es fehlen keine Teile.</li>
+<li><strong>„Verwende keine externen Bibliotheken und kein CDN.“</strong> Aus dem Internet nachgeladener Code wird in Guomu nicht ausgeführt. Code direkt in der Datei schon.</li>
+<li><strong>„Speichere Daten in localStorage.“</strong> So bleiben deine Eingaben erhalten, wenn du das Werkzeug schließt und später wieder öffnest.</li>
+<li><strong>„Gestalte es für ein iPhone im Hochformat mit großen Buttons.“</strong></li>
+</ul>
+<table class="blog-table">
+<thead><tr><th>Ansatz</th><th>Beispiel</th></tr></thead>
+<tbody>
+<tr><td>Nur das Werkzeug nennen</td><td>„Bau mir einen Ausgabenrechner.“</td></tr>
+<tr><td>Brauchbare Details angeben</td><td>„Bau mir einen Ausgabenrechner. Ich möchte einen Betrag eingeben und eine Kategorie wählen (Essen, Fahrtkosten oder Sonstiges). Zeige darunter die heutigen Einträge und die Gesamtsumme an. Erstelle eine einzige HTML-Datei mit CSS und JavaScript in derselben Datei. Verwende keine externen Bibliotheken. Speichere Daten in localStorage. Gestalte es für ein iPhone im Hochformat.“</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="part-4"><h2>4. In Guomu mit „Offline mini app“ öffnen</h2>
+<p>Wenn die Datei fertig ist, tippe in der KI-App auf „Teilen“ und wähle <a href="/guomu/de/">Guomu</a>, um sie als Lieferung zu empfangen. Wechsle dann den Modus:</p>
+<ol>
+<li>Öffne die Lieferung. Sie startet im Vollbildmodus. Tippe unten rechts auf den quadratischen Button, um die vollständige Oberfläche einzublenden.</li>
+<li>Tippe oben auf „Run mode“.</li>
+<li>Wähle „Offline mini app“. Die Seite lädt neu und die Buttons funktionieren.</li>
+</ol>
+<p>Guomu hat drei Modi zum Öffnen von HTML. Standardmäßig startet der vorsichtigste Modus. Um Code auszuführen, musst du den Modus selbst umschalten, und bei jedem erneuten Öffnen startet die Datei wieder in „Safe preview“:</p>
+<table class="blog-table">
+<thead><tr><th>Modus</th><th>Führt Code aus</th><th>Internetzugang</th><th>Geeignet für</th></tr></thead>
+<tbody>
+<tr><td>Safe preview (Standard)</td><td>Nein</td><td>Nein</td><td>Berichte und Dokumente, die du nur lesen willst</td></tr>
+<tr><td>Offline mini app</td><td>Führt Code in der Datei aus</td><td>Nein</td><td>Timer, Ausgabenrechner und Checklisten</td></tr>
+<tr><td>HTTPS mini app</td><td>Führt Code in der Datei aus</td><td>Verbindung über HTTPS nach deiner Bestätigung</td><td>Werkzeuge, die Online-Daten abrufen müssen</td></tr>
+</tbody>
+</table>
+<p>Mit „HTTPS mini app“ kann eine Seite deine Eingaben an einen fremden Server senden. Nutze diesen Modus nur, wenn du der Quelle der Datei vertraust. Für die meisten kleinen Werkzeuge reicht „Offline mini app“ völlig aus.</p>
+<figure class="blog-illus"><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/modes.webp" alt="Handgezeichnete Illustration eines Bedienfelds mit einem dreistufigen Schalter, einem Schloss und einem ausgesteckten Kabel" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-5"><aside class="cta-mid"><p>Dateien, die dein iPhone nicht öffnet – in Guomu geöffnet</p><a class="button" href="https://apps.apple.com/app/id6835101059">Laden im App Store</a></aside><h2>5. Daten behalten oder löschen</h2>
+<p>Jede Lieferung hat ihren eigenen Speicher. Daten, die ein Werkzeug in localStorage ablegt, sind beim nächsten Öffnen dieser Lieferung in Guomu wieder da. Andere Werkzeuge können sie nicht einsehen.</p>
+<p>Um von vorn zu beginnen, tippe oben rechts auf „⋯“ und wähle „Clear this file's mini app data“. Dadurch werden die gespeicherten Daten des Werkzeugs gelöscht, nicht aber die Datei selbst.</p>
+<p>Zum Ausprobieren kannst du in den Einstellungen von Guomu die Beispieldatei „Focus Timer.html“ öffnen und auf „Offline mini app“ umschalten.</p>
+</section>
+
+<section id="part-6"><h2>6. Was diese Werkzeuge nicht können</h2>
+<p>Guomu schränkt ein, was Webcode tun darf, damit du Dateien aus unbekannten Quellen sicherer öffnen kannst:</p>
+<ul>
+<li>Code aus dem Internet – einschließlich CDNs und externer Bibliotheken – wird nicht ausgeführt. Schreib ihn direkt in die Datei.</li>
+<li>Die Seite kann keine neuen Fenster öffnen, keine anderen Webseiten einbetten und nicht zu externen URLs wechseln.</li>
+<li>Formulare lassen sich nicht ins Internet absenden.</li>
+<li>Die Seite kann sich erst mit dem Internet verbinden, nachdem du auf „HTTPS mini app“ umgeschaltet und bestätigt hast.</li>
+</ul>
+<p>Wenn ein Werkzeug mehrere Dateien benötigt, etwa Bilder oder eine separate CSS-Datei, bitte die KI, alles zusammen mit einer index.html in ein ZIP-Archiv zu packen. Teile die gesamte ZIP-Datei mit Guomu. Guomu öffnet zuerst die index.html, und Dateien im selben Paket können aufeinander verweisen.</p>
+</section>
+
+<section id="part-7"><h2>7. Notizen hinterlassen und die KI um Korrekturen bitten</h2>
+<p>Die erste Version braucht oft noch kleine Anpassungen, wie einen größeren Button oder sauber ausgerichtete Zahlen. Wenn dir etwas auffällt, füge in Guomu eine Notiz hinzu, was wie geändert werden soll. Wenn du mit dem Prüfen fertig bist, fasse die offenen Notizen über „Return slip“ zu einem einzigen Text zusammen. Füge ihn in deinen Chat mit der KI ein und bitte um eine Korrektur.</p>
+<p>Schicke die überarbeitete Datei unter demselben Dateinamen wieder an Guomu. Sie wird als Version 2 abgelegt, sodass du deine bisherigen Notizen Punkt für Punkt abgleichen kannst. Diesen Ablauf erkläre ich in <a href="/guomu/de/blog/review-ai-agent-files-on-iphone/">einem weiteren Artikel</a>.</p>
+<p>Guomu setzt iOS 18 oder neuer voraus. In der kostenlosen Version kannst du bis zu 10 Lieferungen behalten und siehst ein Werbebanner. Pro hebt das Limit auf und entfernt die Werbung. Deine Dateien und Mini-App-Daten bleiben auf deinem iPhone oder in deinem iCloud Drive, nicht auf meinem Server. Details findest du in der <a href="/guomu/de/privacy/">Datenschutzerklärung</a>.</p>
+</section>
+
+<section id="part-8"><h2>8. Häufig gestellte Fragen</h2><div class="blog-faq">
+<h3>Warum funktionieren die Buttons nicht, wenn ich eine HTML-Datei öffne?</h3><p>Guomu öffnet HTML standardmäßig im Modus „Safe preview“, der keinen Code auf der Seite ausführt. Blende die vollständige Oberfläche ein, tippe oben auf „Run mode“ und wähle „Offline mini app“. Die Seite lädt neu und du kannst die Buttons benutzen.</p>
+<h3>Gehen die von einer Mini-App gespeicherten Daten verloren?</h3><p>In localStorage gespeicherte Daten bleiben bei dieser Lieferung und sind beim nächsten Öffnen wieder da. Um sie zu löschen, tippe auf „⋯“ und wähle „Clear this file's mini app data“.</p>
+<h3>Warum läuft ein KI-Werkzeug mit externer Bibliothek nicht in Guomu?</h3><p>Aus dem Internet nachgeladener Code wird nicht ausgeführt. Bitte die KI, eine einzige HTML-Datei zu erstellen, die den gesamten benötigten Code direkt enthält, ohne CDN.</p>
+<h3>Kann eine Mini-App Daten aus dem Internet abrufen?</h3><p>Du kannst zu „HTTPS mini app“ wechseln. Guomu bittet dich zuvor um Bestätigung. Da Code auf der Seite Inhalte oder deine Eingaben an einen fremden Server senden kann, solltest du diesen Modus nur nutzen, wenn du der Quelle der Datei vertraust.</p>
+</div></section></article><aside class="cta"><h2>Dateien, die dein iPhone nicht öffnet – in Guomu geöffnet</h2><p>iPhone · ab iOS 18 · Kostenloser Download</p><a class="button" href="https://apps.apple.com/app/id6835101059">Laden im App Store</a></aside><nav class="related"><h2>Weiterlesen</h2><ul><li><a href="/guomu/de/blog/how-to-write-revision-notes-for-ai/">Änderungswünsche für KI klar formulieren: 5 praktische Tipps<span>Soll eine KI deinen Bericht oder ein Dokument korrigieren? Mit diesen 5 Tipps schreibst du klare Korrekturnotizen, damit sie genau das ändert, was du willst.</span></a></li><li><a href="/guomu/de/blog/review-ai-agent-files-on-iphone/">Claude- und Gemini-Dateien am iPhone prüfen und korrigieren<span>KI-Dateien am iPhone in 5 Schritten prüfen: als Datei exportieren, im Vollbild lesen, Korrekturen notieren, gesammelt zurückschicken und Version 2 abgleichen.</span></a></li></ul></nav><p><a href="/guomu/de/blog/">← Zurück zu den Artikeln</a></p></main>
+<footer><span>© Sona Orbit</span><a href="/guomu/de/">Start</a><a href="/guomu/de/blog/">Artikel</a><a href="/guomu/de/privacy/">Datenschutz</a><a href="/guomu/de/support/">Hilfe</a><a href="https://sona-orbit.github.io/">Sona Orbit</a></footer>
+</body></html>

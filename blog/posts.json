@@ -9,10 +9,35 @@
     "desc": "AI 做的報表、文件要改，一句「這裡怪怪的」常常換來一份全部重寫的新版本。整理 5 個備註寫法：指出位置、寫現在和想要的、一則一件事、分必改和可改、說怎麼算改好，附範例。",
     "hero_alt": "插畫：水獺仰躺在水面上，肚子上放著一張長長的簽收單，旁邊漂著幾張寫了記號的紙"
    },
+   "zh-Hans": {
+    "title": "请 AI 修改文件，备注怎么写它才改得对？5 个写法",
+    "desc": "AI 做的报表、文件要改，一句“这里怪怪的”常常换来一份全部重写的新版本。整理 5 个备注写法：指出位置、写现在和想要的、一则一件事、分必改和可改、说怎么算改好，附范例。",
+    "hero_alt": "插画：水獭仰躺在水面上，肚子上放著一张长长的签收单，旁边漂著几张写了记号的纸"
+   },
    "en": {
     "title": "How to Write AI Revision Notes That Get the Right Fixes: 5 Tips",
     "desc": "Need an AI to fix a report or document? These 5 tips show you how to write clear revision notes so it changes what you asked for.",
     "hero_alt": "Illustration: An otter floats on its back with a long receipt on its belly and marked-up pages nearby"
+   },
+   "es": {
+    "title": "Cómo pedir correcciones a una IA sin que cambie todo: 5 consejos",
+    "desc": "¿Necesitas que una IA corrija un informe o documento? Estos 5 consejos te muestran cómo escribir notas de revisión claras para que cambie solo lo que pides.",
+    "hero_alt": "Ilustración: una nutria flota boca arriba con un recibo largo sobre la barriga y páginas con anotaciones cerca"
+   },
+   "de": {
+    "title": "Änderungswünsche für KI klar formulieren: 5 praktische Tipps",
+    "desc": "Soll eine KI deinen Bericht oder ein Dokument korrigieren? Mit diesen 5 Tipps schreibst du klare Korrekturnotizen, damit sie genau das ändert, was du willst.",
+    "hero_alt": "Illustration: Ein Otter treibt auf dem Rücken mit einem langen Beleg auf dem Bauch und markierten Seiten daneben"
+   },
+   "fr": {
+    "title": "Demander des corrections à une IA : 5 conseils efficaces",
+    "desc": "Besoin qu'une IA corrige un rapport ou un document ? Ces 5 conseils montrent comment rédiger des notes de révision claires pour obtenir les bonnes corrections.",
+    "hero_alt": "Illustration : Une loutre flotte sur le dos avec un long reçu sur le ventre et des pages annotées à côté d'elle"
+   },
+   "pt-BR": {
+    "title": "Como pedir correções para a IA sem mudar o resto: 5 dicas",
+    "desc": "Precisa que a IA corrija um relatório ou documento? Veja 5 dicas para escrever notas de revisão claras e fazer ela mudar exatamente o que você pediu.",
+    "hero_alt": "Ilustração: Uma lontra flutua de costas com um longo recibo na barriga e páginas anotadas por perto"
    }
   }
  },
@@ -26,10 +51,35 @@
     "desc": "請 Claude、Gemini 做計時器、記帳表、打卡清單這類 HTML 小工具很快，難的是在手機上打開來用。整理提示詞寫法、用過目以「離線小應用」執行、資料怎麼保存，以及做不到的事。",
     "hero_alt": "手繪插畫：一隻水獺抱著手機，螢幕上是一個有大按鈕的小計時器"
    },
+   "zh-Hans": {
+    "title": "请 AI 做的 HTML 小工具，怎么在 iPhone 上打开来用？",
+    "desc": "请 Claude、Gemini 做计时器、记帐表、打卡清单这类 HTML 小工具很快，难的是在手机上打开来用。整理提示词写法、用过目以“离线小应用”执行、资料怎么保存，以及做不到的事。",
+    "hero_alt": "手绘插画：一只水獭抱著手机，屏幕上是一个有大按钮的小计时器"
+   },
    "en": {
     "title": "How to Run AI-Made HTML Mini Apps Offline on Your iPhone",
     "desc": "Claude or Gemini can make an HTML timer, expense tracker, or checklist. Learn how to open it in Guomu, keep its data, and send fixes back to the AI.",
     "hero_alt": "Hand-drawn illustration of an otter holding a phone with a small timer and large buttons on its screen"
+   },
+   "es": {
+    "title": "Cómo usar mini apps HTML hechas con IA sin conexión en iPhone",
+    "desc": "Claude o Gemini pueden crear un temporizador, control de gastos o lista HTML. Ábrelo en Guomu, guarda sus datos y pide ajustes a la IA.",
+    "hero_alt": "Ilustración dibujada a mano de una nutria que sostiene un teléfono con un temporizador pequeño y botones grandes en la pantalla"
+   },
+   "de": {
+    "title": "KI-erstellte HTML-Mini-Apps auf dem iPhone offline nutzen",
+    "desc": "Claude oder Gemini bauen dir HTML-Timer, Ausgabenrechner oder Checklisten. Öffne sie in Guomu, behalte deine Daten und schicke Korrekturen an die KI zurück.",
+    "hero_alt": "Handgezeichnete Illustration eines Otters, der ein Smartphone mit einem kleinen Timer und großen Buttons auf dem Bildschirm hält"
+   },
+   "fr": {
+    "title": "Exécuter hors ligne des mini-apps HTML créées par IA sur iPhone",
+    "desc": "Claude ou Gemini peuvent créer un minuteur, un suivi de dépenses ou une checklist en HTML. Ouvrez-les dans Guomu, gardez vos données et demandez des retouches.",
+    "hero_alt": "Illustration dessinée à la main d’une loutre tenant un téléphone affichant un petit minuteur et de grands boutons"
+   },
+   "pt-BR": {
+    "title": "Como rodar miniapps HTML feitos por IA offline no iPhone",
+    "desc": "Claude ou Gemini criam timers, controles de gastos ou checklists em HTML. Veja como abrir no Guomu, manter os dados e pedir ajustes à IA.",
+    "hero_alt": "Ilustração desenhada à mão de uma lontra segurando um celular com um pequeno timer e botões grandes na tela"
    }
   }
  },
@@ -43,10 +93,35 @@
     "desc": "在 iPhone 上請 AI Agent 做報表、文件，常常看不清楚、改的話又講不清楚。整理一套 5 步驟的檢查做法：輸出成檔案、全螢幕看、邊看邊記、一次交回、對照第 2 版。",
     "hero_alt": "手繪插畫：一隻水獺仰躺著，在肚子上的簽收單蓋章"
    },
+   "zh-Hans": {
+    "title": "在手机上请 Claude、Gemini 做的文件，怎么检查、再请它改？",
+    "desc": "在 iPhone 上请 AI Agent 做报表、文件，常常看不清楚、改的话又讲不清楚。整理一套 5 步骤的检查做法：输出成文件、全屏幕看、边看边记、一次交回、对照第 2 版。",
+    "hero_alt": "手绘插画：一只水獭仰躺著，在肚子上的签收单盖章"
+   },
    "en": {
     "title": "Review Claude and Gemini Files on iPhone, Then Ask for Fixes",
     "desc": "Review AI agent files on iPhone in 5 steps: export a file, read it full screen, note fixes as you go, send them back at once, then check version 2.",
     "hero_alt": "Hand-drawn illustration: an otter lying on its back, stamping a receipt on its belly"
+   },
+   "es": {
+    "title": "Revisar archivos de Claude y Gemini en iPhone y pedir cambios",
+    "desc": "Revisa archivos de IA en iPhone en 5 pasos: exporta el archivo, léelo a pantalla completa, anota cambios, envíalos juntos y comprueba la versión 2.",
+    "hero_alt": "Ilustración dibujada a mano: una nutria boca arriba poniéndose un sello en un recibo sobre la barriga"
+   },
+   "de": {
+    "title": "Claude- und Gemini-Dateien am iPhone prüfen und korrigieren",
+    "desc": "KI-Dateien am iPhone in 5 Schritten prüfen: als Datei exportieren, im Vollbild lesen, Korrekturen notieren, gesammelt zurückschicken und Version 2 abgleichen.",
+    "hero_alt": "Handgezeichnete Illustration: ein Otter liegt auf dem Rücken und stempelt einen Beleg auf seinem Bauch"
+   },
+   "fr": {
+    "title": "Relire les fichiers Claude et Gemini sur iPhone et corriger",
+    "desc": "Relisez les fichiers d'un agent IA sur iPhone en 5 étapes : exporter, lire en plein écran, noter les retours, tout envoyer d'un coup et vérifier la v2.",
+    "hero_alt": "Illustration dessinée à la main : une loutre allongée sur le dos, tamponnant un reçu sur son ventre"
+   },
+   "pt-BR": {
+    "title": "Revisar arquivos do Claude e Gemini no iPhone e pedir ajustes",
+    "desc": "Revise arquivos de agentes de IA no iPhone em 5 passos: exporte um arquivo, leia em tela cheia, anote ajustes, envie tudo de uma vez e confira a versão 2.",
+    "hero_alt": "Ilustração feita à mão: uma lontra deitada de costas, carimbando um recibo na própria barriga"
    }
   }
  }
