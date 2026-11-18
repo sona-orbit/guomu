@@ -1,0 +1,129 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="text-scale" content="scale">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)"><meta name="apple-itunes-app" content="app-id=6835101059">
+<script type="speculationrules">{"prerender": [{"where": {"and": [{"href_matches": "/guomu/*"}, {"not": {"selector_matches": "[download],[target=_blank],.no-prerender"}}]}, "eagerness": "moderate"}]}</script>
+<title>請 AI 做的 HTML 小工具，怎麼在 iPhone 上打開來用？ | 過目</title><meta name="description" content="請 Claude、Gemini 做計時器、記帳表、打卡清單這類 HTML 小工具很快，難的是在手機上打開來用。整理提示詞寫法、用過目以「離線小應用」執行、資料怎麼保存，以及做不到的事。">
+<link rel="canonical" href="https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="x-default" href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/">
+<meta property="og:type" content="article"><meta property="og:title" content="請 AI 做的 HTML 小工具，怎麼在 iPhone 上打開來用？"><meta property="og:description" content="請 Claude、Gemini 做計時器、記帳表、打卡清單這類 HTML 小工具很快，難的是在手機上打開來用。整理提示詞寫法、用過目以「離線小應用」執行、資料怎麼保存，以及做不到的事。"><meta property="og:url" content="https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/"><meta property="og:image" content="https://sona-orbit.github.io/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.jpg">
+<link rel="icon" href="/guomu/assets/favicon-32.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "請 AI 做的 HTML 小工具，怎麼在 iPhone 上打開來用？", "description": "請 Claude、Gemini 做計時器、記帳表、打卡清單這類 HTML 小工具很快，難的是在手機上打開來用。整理提示詞寫法、用過目以「離線小應用」執行、資料怎麼保存，以及做不到的事。", "inLanguage": "zh-Hant", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "mainEntityOfPage": "https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/", "image": "https://sona-orbit.github.io/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.jpg", "author": {"@type": "Person", "name": "Sona Orbit", "jobTitle": "Independent developer"}, "publisher": {"@type": "Organization", "name": "Sona Orbit"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "zh-Hant", "mainEntity": [{"@type": "Question", "name": "為什麼打開 HTML 檔，按鈕按了沒反應？", "acceptedAnswer": {"@type": "Answer", "text": "過目打開 HTML 預設是「安全預覽」，不執行網頁裡的程式。叫出完整介面，在上方「執行模式」選「離線小應用」，頁面重新載入後就能操作。"}}, {"@type": "Question", "name": "小工具存的資料會不會不見？", "acceptedAnswer": {"@type": "Answer", "text": "用 localStorage 存的資料，會留在那一件交付裡，下次打開還在。要清掉時，在「⋯」選「清除這份文件的小應用資料」。"}}, {"@type": "Question", "name": "AI 做的小工具用了外部程式庫，在過目裡跑不起來？", "acceptedAnswer": {"@type": "Answer", "text": "從網路載入的程式不會執行。請 AI 改成單一 HTML 檔，把需要的程式直接寫在檔案裡，不要用 CDN。"}}, {"@type": "Question", "name": "小工具需要連網抓資料可以嗎？", "acceptedAnswer": {"@type": "Answer", "text": "可以切到「HTTPS 小應用」，切換前過目會先問你。網頁程式可能把內容或你輸入的資料傳給別的伺服器，只在信任檔案來源時使用。"}}]}</script><style>
+:root{--bg:#FFFFFF;--soft:#F2F2F2;--ink:#26232b;--muted:#6b6672;--line:rgba(0,0,0,.09);--accent:#111111}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--soft:#202020;--ink:#ece9f0;--muted:#a7a2ae;--line:rgba(255,255,255,.12);--accent:#ECECEC}body .button{color:#16141a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","PingFang SC","Noto Sans TC","Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+.top{max-width:760px;margin:0 auto;padding:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.top .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:none}.top .brand img{width:30px;height:30px;border-radius:8px}
+.top nav{margin-left:auto;display:flex;gap:16px;font-size:0.9375rem}.top nav a{text-decoration:none;color:var(--muted)}.top nav a.on{color:var(--accent);font-weight:600}
+main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
+.eyebrow{color:var(--accent);font-size:0.8125rem;font-weight:600;letter-spacing:.04em;margin:8px 0 0}
+h1{font-size:clamp(1.625rem,1.2rem + 2vw,2.25rem);line-height:1.3;margin:6px 0 12px}h2{font-size:1.4375rem;line-height:1.4;margin:40px 0 12px}h3{font-size:1.1875rem;margin:26px 0 8px}
+.intro{font-size:1.125rem;color:var(--muted)}.meta{color:var(--muted);font-size:0.875rem}
+.langs{font-size:0.875rem;display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 18px}.langs a{text-decoration:none}.langs b{color:var(--ink)}
+figure{margin:22px 0}figure img{display:block;border-radius:18px;width:100%}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;padding-left:22px}
+.blog-note{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;font-size:0.9375rem;color:var(--muted)}
+.blog-src{font-size:0.875rem;color:var(--muted);margin-top:-4px}
+.blog-table.compact{display:table;table-layout:fixed;font-size:0.875rem}.blog-table.compact th,.blog-table.compact td{min-width:0;padding:6px 4px;text-align:center;white-space:nowrap}
+.blog-table{width:100%;border-collapse:collapse;font-size:0.9375rem;display:block;overflow-x:auto}.blog-table th,.blog-table td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;min-width:110px}
+.blog-table th{background:var(--soft)}
+.blog-faq h3{font-size:1.0625rem}blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--line);color:var(--muted)}
+.cta{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:22px;margin:40px 0 20px;text-align:center}.cta h2{margin:0 0 4px}
+.cta-mid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:28px 0}.cta-mid p{margin:0;font-weight:600}.cta-mid .button{margin-top:0;padding:9px 18px;font-size:0.9375rem}
+.related{margin:36px 0 0}.related h2{margin:0 0 10px;font-size:1.1875rem}.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.related a{text-decoration:none;font-weight:600}.related span{display:block;color:var(--muted);font-size:0.875rem;font-weight:400}
+.button{display:inline-block;margin-top:10px;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.cards{display:grid;gap:18px;margin-top:20px}.card{display:grid;grid-template-columns:200px 1fr;gap:16px;background:var(--soft);border:1px solid var(--line);border-radius:18px;overflow:hidden;color:var(--ink);text-decoration:none}
+.card img{width:100%;height:100%;object-fit:cover}.card div{padding:14px 16px 16px 0}.card h2{font-size:1.1875rem;margin:4px 0 6px}.card p{margin:0 0 8px;color:var(--muted);font-size:0.9375rem}.card strong{color:var(--accent);font-size:0.9375rem}
+@media (max-width:37.5em){.card{grid-template-columns:1fr}.card div{padding:0 16px 16px}}
+footer{max-width:760px;margin:0 auto;padding:20px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:0.875rem;display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--muted)}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+@media (prefers-reduced-motion:no-preference){@view-transition{navigation:auto}}
+</style></head><body>
+<header class="top"><a class="brand" href="/guomu/zh-Hant/"><img src="/guomu/assets/icon-192.webp" alt="" width="30" height="30">過目</a>
+<nav><a href="/guomu/zh-Hant/">首頁</a><a class="on" href="/guomu/zh-Hant/blog/">文章</a></nav></header>
+<main><p class="eyebrow">過目 · 文章</p><h1>請 AI 做的 HTML 小工具，怎麼在 iPhone 上打開來用？</h1><p class="intro">請 AI 做一個小工具，例如計時器、記帳表、打卡清單，現在幾句話就能拿到一個 HTML 檔。卡住的地方通常在最後一步：手機上要找個地方把它打開、按鈕真的能按、資料下次還在。做法是請 AI 把所有東西寫進同一個 HTML 檔，分享到過目，切到「離線小應用」執行；它不連網，資料留在那一件交付裡。</p><p class="meta"><time datetime="2026-11-18">2026-11-18</time> · 約 6 分鐘閱讀</p><p class="langs"><b>繁體中文</b><a href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/">English</a></p><figure><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.webp" alt="手繪插畫：一隻水獺抱著手機，螢幕上是一個有大按鈕的小計時器" width="600" height="400" fetchpriority="high"></figure><nav class="toc"><strong>文章目錄</strong><ol><li><a href="#part-1">AI 做的小工具，卡在「打開來用」</a></li><li><a href="#part-2">可以請 AI 做哪些小工具</a></li><li><a href="#part-3">提示詞這樣寫，比較能直接用</a></li><li><a href="#part-4">用過目打開：切到「離線小應用」</a></li><li><a href="#part-5">資料會留著，也可以清掉</a></li><li><a href="#part-6">做不到的事</a></li><li><a href="#part-7">不好用？留備註請 AI 改</a></li><li><a href="#part-8">常見問題</a></li></ol></nav><article><p class="blog-note">我是 Sona Orbit，一個人開發過目的獨立開發者。這篇寫的是我自己在手機上用 AI 做小工具的方式；過目的功能以本站說明與 App 1.0 為準（2026 年 11 月）。</p>
+
+<section id="part-1"><h2>1. AI 做的小工具，卡在「打開來用」</h2>
+<p>HTML 不只是網頁，也可以是一個小程式：有按鈕、會計算、能記住你輸入的東西。請 Claude、Gemini 這類 AI 做一個，通常幾句話就有了。</p>
+<p>麻煩在手機上。它常常只是對話裡一大段程式碼；就算存成檔案，也要找一個能真的執行它、又讓人放心的地方打開。按鈕按得下去、數字記得住，這個小工具才算能用。</p>
+</section>
+
+<section id="part-2"><h2>2. 可以請 AI 做哪些小工具</h2>
+<p>適合的是「一個畫面、幾個按鈕、資料只給自己看」的東西，例如：</p>
+<ul>
+<li>番茄鐘、泡茶計時、運動間歇計時</li>
+<li>簡單記帳表：輸入金額和類別，自動加總</li>
+<li>每日打卡清單：喝水、吃藥、背單字</li>
+<li>單字卡：點一下翻面，答錯的再出現</li>
+<li>聚餐分帳、匯率換算（匯率自己填）</li>
+<li>抽籤、骰子、輪流排班表</li>
+</ul>
+<figure class="blog-illus"><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/tools.webp" alt="手繪插畫：桌上排著幾個小工具，計時器、算盤、打勾清單和一疊單字卡" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-3"><h2>3. 提示詞這樣寫，比較能直接用</h2>
+<p>說清楚要什麼之外，加上這幾句，做出來的檔案比較能在手機上直接跑：</p>
+<ul>
+<li><strong>「做成單一 HTML 檔，CSS 和 JavaScript 都寫在同一個檔案裡。」</strong>一個檔案最好分享，也不會缺東缺西。</li>
+<li><strong>「不要用外部的程式庫或 CDN。」</strong>從網路載入的程式在過目裡不會執行，寫在檔案裡的才會。</li>
+<li><strong>「資料存在 localStorage。」</strong>這樣關掉再打開，輸入過的東西還在。</li>
+<li><strong>「版面以 iPhone 直式為主，按鈕大一點。」</strong></li>
+</ul>
+<table class="blog-table">
+<thead><tr><th>寫法</th><th>例子</th></tr></thead>
+<tbody>
+<tr><td>只說要什麼</td><td>「幫我做一個記帳工具」</td></tr>
+<tr><td>比較能直接用</td><td>「幫我做一個記帳工具：輸入金額、選類別（餐飲、交通、其他），下面列出今天的紀錄和總額。做成單一 HTML 檔，CSS 和 JavaScript 寫在同一個檔案，不要用外部程式庫，資料存在 localStorage，版面以 iPhone 直式為主。」</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="part-4"><aside class="cta-mid"><p>Agent 做的檔案，在 iPhone 上檢查</p><a class="button" href="https://apps.apple.com/app/id6835101059">在 App Store 下載</a></aside><h2>4. 用過目打開：切到「離線小應用」</h2>
+<p>檔案做好後，在 AI 的 App 裡按分享、選 <a href="/guomu/zh-Hant/">過目</a>，收進簽收單。打開後照這樣切換：</p>
+<ol>
+<li>點開那一件。預設是全螢幕，按右下角的方鈕叫出完整介面。</li>
+<li>上方會有一列顯示目前的模式，按「執行模式」。</li>
+<li>選「離線小應用」，頁面重新載入，按鈕就能按了。</li>
+</ol>
+<p>過目打開 HTML 有三種模式。預設是最保守的那一種，要執行程式得自己切換，而且每次打開都會從「安全預覽」開始：</p>
+<table class="blog-table">
+<thead><tr><th>模式</th><th>執行程式</th><th>連網</th><th>適合</th></tr></thead>
+<tbody>
+<tr><td>安全預覽（預設）</td><td>不執行</td><td>不連</td><td>報表、文件這類只要看的頁面</td></tr>
+<tr><td>離線小應用</td><td>執行檔案裡的程式</td><td>不連</td><td>計時器、記帳表、打卡清單</td></tr>
+<tr><td>HTTPS 小應用</td><td>執行檔案裡的程式</td><td>可以連 HTTPS，切換前會先問你</td><td>需要抓網路資料的小工具</td></tr>
+</tbody>
+</table>
+<p>HTTPS 小應用會讓網頁把你輸入的東西傳給別的伺服器，只在你信任檔案來源時再開。一般的小工具用「離線小應用」就夠了。</p>
+<figure class="blog-illus"><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/modes.webp" alt="手繪插畫：一個有三段開關的面板，旁邊是一個鎖頭和一個斷開的插頭" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-5"><h2>5. 資料會留著，也可以清掉</h2>
+<p>每一件交付有自己的儲存空間。小工具用 localStorage 存的東西，下次在過目打開同一件時還在；不同的小工具之間不會互相看到。</p>
+<p>想從頭來，按右上角的「⋯」，選「清除這份文件的小應用資料」。這只清掉小工具存的資料，檔案本身不會刪。</p>
+<p>過目可以在設定裡打開「專注計時.html」這個範例，切到「離線小應用」就能試試看。</p>
+</section>
+
+<section id="part-6"><h2>6. 做不到的事</h2>
+<p>為了讓不明來源的檔案打開也安全，過目對網頁程式有幾個限制：</p>
+<ul>
+<li>從網路載入的程式（CDN、外部程式庫）不會執行，要寫在檔案裡。</li>
+<li>不能開新視窗、不能嵌入其他網頁，也不能跳到外部網址。</li>
+<li>表單不會送出到網路上。</li>
+<li>只有切到「HTTPS 小應用」並同意後，才能連網。</li>
+</ul>
+<p>小工具需要好幾個檔案（例如圖片、另外的 CSS）時，請 AI 打包成 ZIP，裡面放一個 index.html。整包分享到過目，會先打開 index.html，同一包裡的檔案可以互相引用。</p>
+</section>
+
+<section id="part-7"><h2>7. 不好用？留備註請 AI 改</h2>
+<p>第一版常常有小地方要調，例如按鈕太小、數字沒對齊。看到就在過目加一則備註，寫「哪裡＋要改成怎樣」。全部看完，用「退件單」把還沒解決的備註整理成一段文字，貼回和 AI 的對話，請它改。</p>
+<p>改好的檔案用同一個檔名送回過目，會記成第 2 版，可以對照上次的備註一條一條看。這部分的做法在<a href="/guomu/zh-Hant/blog/review-ai-agent-files-on-iphone/">另一篇文章</a>有寫。</p>
+<p>過目需要 iOS 18 以上。免費版可以存 10 件、有橫幅廣告；Pro 不限件數、沒有廣告。檔案和小工具的資料都存在你自己的手機或 iCloud 雲碟，不會傳到我的伺服器，詳見<a href="/guomu/zh-Hant/privacy/">隱私權政策</a>。</p>
+</section>
+
+<section id="part-8"><h2>8. 常見問題</h2><div class="blog-faq">
+<h3>為什麼打開 HTML 檔，按鈕按了沒反應？</h3><p>過目打開 HTML 預設是「安全預覽」，不執行網頁裡的程式。叫出完整介面，在上方「執行模式」選「離線小應用」，頁面重新載入後就能操作。</p>
+<h3>小工具存的資料會不會不見？</h3><p>用 localStorage 存的資料，會留在那一件交付裡，下次打開還在。要清掉時，在「⋯」選「清除這份文件的小應用資料」。</p>
+<h3>AI 做的小工具用了外部程式庫，在過目裡跑不起來？</h3><p>從網路載入的程式不會執行。請 AI 改成單一 HTML 檔，把需要的程式直接寫在檔案裡，不要用 CDN。</p>
+<h3>小工具需要連網抓資料可以嗎？</h3><p>可以切到「HTTPS 小應用」，切換前過目會先問你。網頁程式可能把內容或你輸入的資料傳給別的伺服器，只在信任檔案來源時使用。</p>
+</div></section></article><aside class="cta"><h2>Agent 做的檔案，在 iPhone 上檢查</h2><p>iPhone · 免費下載</p><a class="button" href="https://apps.apple.com/app/id6835101059">在 App Store 下載</a></aside><nav class="related"><h2>延伸閱讀</h2><ul><li><a href="/guomu/zh-Hant/blog/how-to-write-revision-notes-for-ai/">請 AI 修改檔案，備註怎麼寫它才改得對？5 個寫法<span>AI 做的報表、文件要改，一句「這裡怪怪的」常常換來一份全部重寫的新版本。整理 5 個備註寫法：指出位置、寫現在和想要的、一則一件事、分必改和可改、說怎麼算改好，附範例。</span></a></li><li><a href="/guomu/zh-Hant/blog/review-ai-agent-files-on-iphone/">在手機上請 Claude、Gemini 做的檔案，怎麼檢查、再請它改？<span>在 iPhone 上請 AI Agent 做報表、文件，常常看不清楚、改的話又講不清楚。整理一套 5 步驟的檢查做法：輸出成檔案、全螢幕看、邊看邊記、一次交回、對照第 2 版。</span></a></li></ul></nav><p><a href="/guomu/zh-Hant/blog/">← 返回文章列表</a></p></main>
+<footer><span>© Sona Orbit</span><a href="/guomu/zh-Hant/">首頁</a><a href="/guomu/zh-Hant/blog/">文章</a><a href="/guomu/zh-Hant/privacy/">隱私權</a><a href="/guomu/zh-Hant/support/">支援</a><a href="https://sona-orbit.github.io/">Sona Orbit</a></footer>
+</body></html>

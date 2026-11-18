@@ -17,6 +17,23 @@
   }
  },
  {
+  "slug": "run-ai-html-mini-apps-on-iphone",
+  "date": "2026-11-18",
+  "run": "/Users/johnkeng/Works/自製 Apple APP/官網SEO/部落格/guomu/runs/2026-11-18-run-ai-html-mini-apps-on-iphone",
+  "langs": {
+   "zh-Hant": {
+    "title": "請 AI 做的 HTML 小工具，怎麼在 iPhone 上打開來用？",
+    "desc": "請 Claude、Gemini 做計時器、記帳表、打卡清單這類 HTML 小工具很快，難的是在手機上打開來用。整理提示詞寫法、用過目以「離線小應用」執行、資料怎麼保存，以及做不到的事。",
+    "hero_alt": "手繪插畫：一隻水獺抱著手機，螢幕上是一個有大按鈕的小計時器"
+   },
+   "en": {
+    "title": "How to Run AI-Made HTML Mini Apps Offline on Your iPhone",
+    "desc": "Claude or Gemini can make an HTML timer, expense tracker, or checklist. Learn how to open it in Guomu, keep its data, and send fixes back to the AI.",
+    "hero_alt": "Hand-drawn illustration of an otter holding a phone with a small timer and large buttons on its screen"
+   }
+  }
+ },
+ {
   "slug": "review-ai-agent-files-on-iphone",
   "date": "2026-11-16",
   "run": "/Users/johnkeng/Works/自製 Apple APP/官網SEO/部落格/guomu/runs/2026-11-16-review-ai-agent-files-on-iphone",

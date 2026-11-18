@@ -1,0 +1,129 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><script async src="https://www.googletagmanager.com/gtag/js?id=G-FJGRNJFB15"></script><script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FJGRNJFB15");document.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[href]");if(!a)return;var h=a.href;if(/apps\.apple\.com\/|testflight\.apple\.com\//.test(h)){gtag("event","download_click",{link_url:h,link_text:(a.textContent||"").trim().slice(0,60)});}},true);</script>
+<meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light dark"><meta name="text-scale" content="scale">
+<meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)"><meta name="apple-itunes-app" content="app-id=6835101059">
+<script type="speculationrules">{"prerender": [{"where": {"and": [{"href_matches": "/guomu/*"}, {"not": {"selector_matches": "[download],[target=_blank],.no-prerender"}}]}, "eagerness": "moderate"}]}</script>
+<title>How to Run AI-Made HTML Mini Apps Offline on Your iPhone | Guomu</title><meta name="description" content="Claude or Gemini can make an HTML timer, expense tracker, or checklist. Learn how to open it in Guomu, keep its data, and send fixes back to the AI.">
+<link rel="canonical" href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="zh-Hant" href="https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="en" href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/"><link rel="alternate" hreflang="x-default" href="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/">
+<meta property="og:type" content="article"><meta property="og:title" content="How to Run AI-Made HTML Mini Apps Offline on Your iPhone"><meta property="og:description" content="Claude or Gemini can make an HTML timer, expense tracker, or checklist. Learn how to open it in Guomu, keep its data, and send fixes back to the AI."><meta property="og:url" content="https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/"><meta property="og:image" content="https://sona-orbit.github.io/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.jpg">
+<link rel="icon" href="/guomu/assets/favicon-32.png"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "BlogPosting", "headline": "How to Run AI-Made HTML Mini Apps Offline on Your iPhone", "description": "Claude or Gemini can make an HTML timer, expense tracker, or checklist. Learn how to open it in Guomu, keep its data, and send fixes back to the AI.", "inLanguage": "en", "datePublished": "2026-11-18", "dateModified": "2026-11-18", "mainEntityOfPage": "https://sona-orbit.github.io/guomu/blog/run-ai-html-mini-apps-on-iphone/", "image": "https://sona-orbit.github.io/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.jpg", "author": {"@type": "Person", "name": "Sona Orbit", "jobTitle": "Independent developer"}, "publisher": {"@type": "Organization", "name": "Sona Orbit"}}</script><script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "inLanguage": "en", "mainEntity": [{"@type": "Question", "name": "Why don’t the buttons work when I open an HTML file?", "acceptedAnswer": {"@type": "Answer", "text": "Guomu opens HTML in “Safe preview” by default, which does not run code in the page. Show the full interface, tap “Run mode” at the top, and choose “Offline mini app.” The page reloads, and you can use the buttons."}}, {"@type": "Question", "name": "Will I lose the data saved by a mini app?", "acceptedAnswer": {"@type": "Answer", "text": "Data saved in localStorage stays with that delivery and is there when you open it again. To clear it, tap “⋯” and choose “Clear this file's mini app data.”"}}, {"@type": "Question", "name": "Why won’t an AI-made tool that uses an external library run in Guomu?", "acceptedAnswer": {"@type": "Answer", "text": "Code loaded from the internet will not run. Ask the AI to make a single HTML file with all the needed code written into it, without a CDN."}}, {"@type": "Question", "name": "Can a mini app fetch data from the internet?", "acceptedAnswer": {"@type": "Answer", "text": "You can switch to “HTTPS mini app.” Guomu asks you to confirm first. Code in the page may send its contents or data you enter to another server, so use this mode only when you trust the file’s source."}}]}</script><style>
+:root{--bg:#FFFFFF;--soft:#F2F2F2;--ink:#26232b;--muted:#6b6672;--line:rgba(0,0,0,.09);--accent:#111111}
+@media (prefers-color-scheme:dark){:root{--bg:#121212;--soft:#202020;--ink:#ece9f0;--muted:#a7a2ae;--line:rgba(255,255,255,.12);--accent:#ECECEC}body .button{color:#16141a}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.75 -apple-system,BlinkMacSystemFont,"PingFang TC","PingFang SC","Noto Sans TC","Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}img{max-width:100%;height:auto}
+.top{max-width:760px;margin:0 auto;padding:16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.top .brand{display:flex;align-items:center;gap:8px;font-weight:700;color:var(--ink);text-decoration:none}.top .brand img{width:30px;height:30px;border-radius:8px}
+.top nav{margin-left:auto;display:flex;gap:16px;font-size:0.9375rem}.top nav a{text-decoration:none;color:var(--muted)}.top nav a.on{color:var(--accent);font-weight:600}
+main{max-width:760px;margin:0 auto;padding:8px 16px 48px}
+.eyebrow{color:var(--accent);font-size:0.8125rem;font-weight:600;letter-spacing:.04em;margin:8px 0 0}
+h1{font-size:clamp(1.625rem,1.2rem + 2vw,2.25rem);line-height:1.3;margin:6px 0 12px}h2{font-size:1.4375rem;line-height:1.4;margin:40px 0 12px}h3{font-size:1.1875rem;margin:26px 0 8px}
+.intro{font-size:1.125rem;color:var(--muted)}.meta{color:var(--muted);font-size:0.875rem}
+.langs{font-size:0.875rem;display:flex;gap:12px;flex-wrap:wrap;margin:6px 0 18px}.langs a{text-decoration:none}.langs b{color:var(--ink)}
+figure{margin:22px 0}figure img{display:block;border-radius:18px;width:100%}
+.toc{background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:20px 0}.toc ol{margin:6px 0 0;padding-left:22px}
+.blog-note{background:var(--soft);border-left:4px solid var(--accent);border-radius:10px;padding:12px 16px;font-size:0.9375rem;color:var(--muted)}
+.blog-src{font-size:0.875rem;color:var(--muted);margin-top:-4px}
+.blog-table.compact{display:table;table-layout:fixed;font-size:0.875rem}.blog-table.compact th,.blog-table.compact td{min-width:0;padding:6px 4px;text-align:center;white-space:nowrap}
+.blog-table{width:100%;border-collapse:collapse;font-size:0.9375rem;display:block;overflow-x:auto}.blog-table th,.blog-table td{border:1px solid var(--line);padding:8px 10px;vertical-align:top;text-align:left;min-width:110px}
+.blog-table th{background:var(--soft)}
+.blog-faq h3{font-size:1.0625rem}blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--line);color:var(--muted)}
+.cta{background:var(--soft);border:1px solid var(--line);border-radius:20px;padding:22px;margin:40px 0 20px;text-align:center}.cta h2{margin:0 0 4px}
+.cta-mid{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;background:var(--soft);border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:28px 0}.cta-mid p{margin:0;font-weight:600}.cta-mid .button{margin-top:0;padding:9px 18px;font-size:0.9375rem}
+.related{margin:36px 0 0}.related h2{margin:0 0 10px;font-size:1.1875rem}.related ul{list-style:none;padding:0;margin:0;display:grid;gap:8px}.related a{text-decoration:none;font-weight:600}.related span{display:block;color:var(--muted);font-size:0.875rem;font-weight:400}
+.button{display:inline-block;margin-top:10px;padding:12px 22px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+.cards{display:grid;gap:18px;margin-top:20px}.card{display:grid;grid-template-columns:200px 1fr;gap:16px;background:var(--soft);border:1px solid var(--line);border-radius:18px;overflow:hidden;color:var(--ink);text-decoration:none}
+.card img{width:100%;height:100%;object-fit:cover}.card div{padding:14px 16px 16px 0}.card h2{font-size:1.1875rem;margin:4px 0 6px}.card p{margin:0 0 8px;color:var(--muted);font-size:0.9375rem}.card strong{color:var(--accent);font-size:0.9375rem}
+@media (max-width:37.5em){.card{grid-template-columns:1fr}.card div{padding:0 16px 16px}}
+footer{max-width:760px;margin:0 auto;padding:20px 16px 40px;border-top:1px solid var(--line);color:var(--muted);font-size:0.875rem;display:flex;gap:14px;flex-wrap:wrap}footer a{color:var(--muted)}
+h1,h2,h3{text-wrap:balance}p,li{text-wrap:pretty}
+@media (prefers-reduced-motion:no-preference){@view-transition{navigation:auto}}
+</style></head><body>
+<header class="top"><a class="brand" href="/guomu/"><img src="/guomu/assets/icon-192.webp" alt="" width="30" height="30">Guomu</a>
+<nav><a href="/guomu/">Home</a><a class="on" href="/guomu/blog/">Articles</a></nav></header>
+<main><p class="eyebrow">Guomu · Articles</p><h1>How to Run AI-Made HTML Mini Apps Offline on Your iPhone</h1><p class="intro">Ask an AI to make a small tool, like a timer, expense tracker, or checklist, and you can get an HTML file in a few sentences. The last step is often the hard part: opening it on your phone, getting the buttons to work, and keeping your data for next time. Ask the AI to put everything in one HTML file, share it to Guomu, and switch to “Offline mini app” to run it. It stays offline, and its data stays with that delivery.</p><p class="meta"><time datetime="2026-11-18">2026-11-18</time> · About 6 min read</p><p class="langs"><a href="https://sona-orbit.github.io/guomu/zh-Hant/blog/run-ai-html-mini-apps-on-iphone/">繁體中文</a><b>English</b></p><figure><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/hero.webp" alt="Hand-drawn illustration of an otter holding a phone with a small timer and large buttons on its screen" width="600" height="400" fetchpriority="high"></figure><nav class="toc"><strong>Contents</strong><ol><li><a href="#part-1">The hard part: opening an AI-made tool</a></li><li><a href="#part-2">Tools you can ask an AI to make</a></li><li><a href="#part-3">How to write a prompt you can use</a></li><li><a href="#part-4">Open it in Guomu with Offline mini app</a></li><li><a href="#part-5">Keep or clear your data</a></li><li><a href="#part-6">What these tools cannot do</a></li><li><a href="#part-7">Leave notes and ask the AI for fixes</a></li><li><a href="#part-8">Frequently asked questions</a></li></ol></nav><article><p class="blog-note">I’m Sona Orbit, the solo developer of Guomu (過目). This is how I use AI-made tools on my phone. For details about Guomu’s features, refer to this site and App 1.0 (November 2026).</p>
+
+<section id="part-1"><h2>1. The hard part: opening an AI-made tool</h2>
+<p>HTML is not just for web pages. It can also be a small program with buttons that does calculations and remembers what you enter. Claude, Gemini, and similar AI apps can usually make one from a short request.</p>
+<p>The tricky part is using it on your phone. It may be a long block of code in a chat. Even if you save it as a file, you need somewhere to open and run it. For the tool to be useful, its buttons need to work and its numbers need to stay there.</p>
+</section>
+
+<section id="part-2"><h2>2. Tools you can ask an AI to make</h2>
+<p>Good candidates fit on one screen, have a few buttons, and hold data just for you. For example:</p>
+<ul>
+<li>A Pomodoro timer, tea timer, or interval timer</li>
+<li>A simple expense tracker: enter an amount and category, then see the total</li>
+<li>A daily checklist for drinking water, taking medication, or practicing vocabulary</li>
+<li>Flashcards you can flip, with missed cards shown again</li>
+<li>A bill splitter or currency converter (you enter the exchange rate)</li>
+<li>A random picker, dice roller, or shift rotation</li>
+</ul>
+<figure class="blog-illus"><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/tools.webp" alt="Hand-drawn illustration of small tools on a table: a timer, calculator, checklist, and stack of flashcards" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-3"><h2>3. How to write a prompt you can use</h2>
+<p>Along with describing the tool you want, add these instructions to help the file run on your phone:</p>
+<ul>
+<li><strong>“Make it a single HTML file, with the CSS and JavaScript in that same file.”</strong> One file is easier to share, with no missing pieces.</li>
+<li><strong>“Do not use external libraries or a CDN.”</strong> Code loaded from the internet will not run in Guomu. Code written into the file will.</li>
+<li><strong>“Save data in localStorage.”</strong> That keeps what you entered when you close and reopen the tool.</li>
+<li><strong>“Design it for an iPhone in portrait orientation, with large buttons.”</strong></li>
+</ul>
+<table class="blog-table">
+<thead><tr><th>Approach</th><th>Example</th></tr></thead>
+<tbody>
+<tr><td>Just name the tool</td><td>“Make me an expense tracker.”</td></tr>
+<tr><td>Give usable details</td><td>“Make me an expense tracker. Let me enter an amount and choose a category (Food, Transportation, or Other). Show today’s entries and total below. Make it a single HTML file with the CSS and JavaScript in the same file. Do not use external libraries. Save data in localStorage. Design it for an iPhone in portrait orientation.”</td></tr>
+</tbody>
+</table>
+</section>
+
+<section id="part-4"><h2>4. Open it in Guomu with Offline mini app</h2>
+<p>When the file is ready, tap Share in the AI app and choose <a href="/guomu/">Guomu</a> to receive it as a delivery. Then switch modes:</p>
+<ol>
+<li>Open the delivery. It starts in full screen. Tap the square button at the bottom right to show the full interface.</li>
+<li>At the top, tap “Run mode.”</li>
+<li>Choose “Offline mini app.” The page reloads, and its buttons work.</li>
+</ol>
+<p>Guomu has three modes for opening HTML. It starts in the most cautious mode. You must switch modes yourself to run code, and every time you open the file, it starts in “Safe preview”:</p>
+<table class="blog-table">
+<thead><tr><th>Mode</th><th>Runs code</th><th>Internet access</th><th>Good for</th></tr></thead>
+<tbody>
+<tr><td>Safe preview (default)</td><td>No</td><td>No</td><td>Reports and documents you only need to read</td></tr>
+<tr><td>Offline mini app</td><td>Runs code in the file</td><td>No</td><td>Timers, expense trackers, and checklists</td></tr>
+<tr><td>HTTPS mini app</td><td>Runs code in the file</td><td>Can connect over HTTPS after you confirm</td><td>Tools that need to fetch online data</td></tr>
+</tbody>
+</table>
+<p>HTTPS mini app can let a page send what you enter to another server. Use it only when you trust the file’s source. “Offline mini app” is enough for most small tools.</p>
+<figure class="blog-illus"><img src="/guomu/assets/blog/run-ai-html-mini-apps-on-iphone/modes.webp" alt="Hand-drawn illustration of a panel with a three-position switch, a lock, and an unplugged cable" width="600" height="400" loading="lazy" decoding="async"></figure>
+</section>
+
+<section id="part-5"><aside class="cta-mid"><p>Check what your agent made, on iPhone</p><a class="button" href="https://apps.apple.com/app/id6835101059">Download on the App Store</a></aside><h2>5. Keep or clear your data</h2>
+<p>Each delivery has its own storage. Data a tool saves in localStorage is there the next time you open that delivery in Guomu. Other tools cannot see it.</p>
+<p>To start over, tap “⋯” at the top right and choose “Clear this file's mini app data.” This clears the tool’s saved data but does not delete the file.</p>
+<p>You can open the sample “Focus Timer.html” in Guomu’s settings and switch to “Offline mini app” to try it.</p>
+</section>
+
+<section id="part-6"><h2>6. What these tools cannot do</h2>
+<p>Guomu limits what web code can do so you can open files from unknown sources more safely:</p>
+<ul>
+<li>Code loaded from the internet, including CDNs and external libraries, will not run. Put it in the file.</li>
+<li>The page cannot open new windows, embed other web pages, or navigate to external URLs.</li>
+<li>Forms will not submit to the internet.</li>
+<li>The page can connect to the internet only after you switch to “HTTPS mini app” and confirm.</li>
+</ul>
+<p>If a tool needs several files, such as images or a separate CSS file, ask the AI to package them in a ZIP with an index.html inside. Share the whole ZIP to Guomu. It opens index.html first, and files in the same package can refer to each other.</p>
+</section>
+
+<section id="part-7"><h2>7. Leave notes and ask the AI for fixes</h2>
+<p>The first version often needs small changes, like a larger button or better number alignment. When you spot something, add a note in Guomu that says what needs changing and how. When you finish reviewing, use “Return slip” to collect unresolved notes into one piece of text. Paste it into your conversation with the AI and ask for a fix.</p>
+<p>Send the revised file to Guomu with the same filename. It becomes version 2, so you can check it against your earlier notes one by one. I explain this process in <a href="/guomu/blog/review-ai-agent-files-on-iphone/">another article</a>.</p>
+<p>Guomu requires iOS 18 or later. The free version lets you save 10 deliveries and has a banner ad. Pro removes the delivery limit and ads. Your files and mini app data stay on your phone or in your iCloud Drive, not on my server. See the <a href="/guomu/privacy/">privacy policy</a> for details.</p>
+</section>
+
+<section id="part-8"><h2>8. Frequently asked questions</h2><div class="blog-faq">
+<h3>Why don’t the buttons work when I open an HTML file?</h3><p>Guomu opens HTML in “Safe preview” by default, which does not run code in the page. Show the full interface, tap “Run mode” at the top, and choose “Offline mini app.” The page reloads, and you can use the buttons.</p>
+<h3>Will I lose the data saved by a mini app?</h3><p>Data saved in localStorage stays with that delivery and is there when you open it again. To clear it, tap “⋯” and choose “Clear this file's mini app data.”</p>
+<h3>Why won’t an AI-made tool that uses an external library run in Guomu?</h3><p>Code loaded from the internet will not run. Ask the AI to make a single HTML file with all the needed code written into it, without a CDN.</p>
+<h3>Can a mini app fetch data from the internet?</h3><p>You can switch to “HTTPS mini app.” Guomu asks you to confirm first. Code in the page may send its contents or data you enter to another server, so use this mode only when you trust the file’s source.</p>
+</div></section></article><aside class="cta"><h2>Check what your agent made, on iPhone</h2><p>iPhone · Free download</p><a class="button" href="https://apps.apple.com/app/id6835101059">Download on the App Store</a></aside><nav class="related"><h2>Keep reading</h2><ul><li><a href="/guomu/blog/how-to-write-revision-notes-for-ai/">How to Write AI Revision Notes That Get the Right Fixes: 5 Tips<span>Need an AI to fix a report or document? These 5 tips show you how to write clear revision notes so it changes what you asked for.</span></a></li><li><a href="/guomu/blog/review-ai-agent-files-on-iphone/">Review Claude and Gemini Files on iPhone, Then Ask for Fixes<span>Review AI agent files on iPhone in 5 steps: export a file, read it full screen, note fixes as you go, send them back at once, then check version 2.</span></a></li></ul></nav><p><a href="/guomu/blog/">← Back to articles</a></p></main>
+<footer><span>© Sona Orbit</span><a href="/guomu/">Home</a><a href="/guomu/blog/">Articles</a><a href="/guomu/privacy/">Privacy</a><a href="/guomu/support/">Support</a><a href="https://sona-orbit.github.io/">Sona Orbit</a></footer>
+</body></html>
