@@ -1,5 +1,47 @@
 [
  {
+  "slug": "open-markdown-file-on-iphone",
+  "date": "2026-11-25",
+  "run": "/Users/johnkeng/Works/自製 Apple APP/官網SEO/部落格/guomu/runs/2026-11-25-open-markdown-file-on-iphone",
+  "langs": {
+   "zh-Hant": {
+    "title": "iPhone 怎麼打開 Markdown（.md）檔？看到排好的標題和表格",
+    "desc": "在 iPhone 點開 .md 檔，常常只看到 # 和 *。說明原因、三種打開方式的差別，以及用過目照標題、表格、清單排好來讀，還能看目錄、搜尋和原始碼。",
+    "hero_alt": "手繪插畫：一隻水獺拿著手機，螢幕上是一份排好標題和表格的文件"
+   },
+   "zh-Hans": {
+    "title": "iPhone 怎么打开 Markdown（.md）文件？看到排好的标题和表格",
+    "desc": "在 iPhone 点开 .md 文件，常常只看到 # 和 *。说明原因、三种打开方式的差别，以及用过目照标题、表格、清单排好来读，还能看目录、搜索和原始码。",
+    "hero_alt": "手绘插画：一只水獭拿著手机，屏幕上是一份排好标题和表格的文件"
+   },
+   "en": {
+    "title": "How to Open a Markdown (.md) File on iPhone With Formatting",
+    "desc": "A .md file on iPhone often shows only # and *. See why, how three ways to open it differ, and how Guomu shows headings, tables and lists, with a contents list and search.",
+    "hero_alt": "Hand-drawn illustration: an otter holding a phone, with a neatly formatted document with headings and a table on the screen"
+   },
+   "es": {
+    "title": "Cómo abrir un archivo Markdown (.md) en iPhone con formato",
+    "desc": "Un .md en iPhone suele mostrar solo # y *. Mira por qué, tres formas de abrirlo y cómo Guomu muestra títulos, tablas y listas, con índice y búsqueda.",
+    "hero_alt": "Ilustración dibujada a mano: una nutria sostiene un teléfono y en la pantalla se ve un documento bien formateado con títulos y una tabla"
+   },
+   "de": {
+    "title": "Markdown-Datei (.md) auf dem iPhone mit Formatierung öffnen",
+    "desc": "Eine .md-Datei zeigt auf dem iPhone oft nur # und *. Warum, drei Wege im Vergleich: Guomu zeigt Überschriften, Tabellen und Listen mit Inhaltsliste und Suche.",
+    "hero_alt": "Handgezeichnete Illustration: ein Otter mit einem Telefon, auf dessen Bildschirm ein sauber formatiertes Dokument mit Überschriften und einer Tabelle zu sehen ist"
+   },
+   "fr": {
+    "title": "Ouvrir un fichier Markdown (.md) sur iPhone, mise en forme",
+    "desc": "Sur iPhone, un .md montre souvent # et *. Pourquoi, trois façons de l’ouvrir, et comment Guomu affiche titres, tableaux, listes, sommaire et recherche.",
+    "hero_alt": "Illustration dessinée à la main : une loutre tient un téléphone dont l’écran affiche un document bien mis en forme, avec des titres et un tableau"
+   },
+   "pt-BR": {
+    "title": "Como abrir um arquivo Markdown (.md) no iPhone com formatação",
+    "desc": "Arquivo .md no iPhone mostra só # e *? Veja por quê, compare três formas de abrir e use o Guomu para ver títulos, tabelas e listas, com sumário e busca.",
+    "hero_alt": "Ilustração desenhada à mão: uma lontra segurando um celular, com um documento bem formatado, com títulos e uma tabela, na tela"
+   }
+  }
+ },
+ {
   "slug": "how-to-write-revision-notes-for-ai",
   "date": "2026-11-18",
   "run": "/Users/johnkeng/Works/自製 Apple APP/官網SEO/部落格/guomu/runs/2026-11-18-how-to-write-revision-notes-for-ai",
